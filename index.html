@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <header class="header">
+    <div class="body_opacity" opacity-visibility="false"></div>
+    <nav class="nav">
+      <div class="navbar">
+        <img src="images/icon-menu.svg" alt="menu icon" id="hamburger">
+        <img src="images/logo.svg" alt="logo" class="logo">
+      </div>
+      <ul class="menu" menu-visibility="false" aria-expanded="false">
+        <li class="menu_item">Collections</li>
+        <li class="menu_item">Men</li>
+        <li class="menu_item">Women</li>
+        <li class="menu_item">About</li>
+        <li class="menu_item">Contact</li>
+      </ul>
+      <div class="user_nav">
+        <div class="cart_container">
+          <img src="images/icon-cart.svg" alt="cart" class="cart">
+          <div class="cart_quantity hide"></div>
+        </div>
+        <div class="basket" basket-visibility="false">
+          <h3 class="basket_title">Cart</h3>
+          <hr class="line">
+          <div class="basket_content">
+            <p class="empty_basket hide">Your cart is empty.</p>
+            <div class="basket_products_wrapper">
+              <div class="basket_product">
+                <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail" class="basket_thumbnail">
+                <div class="basket_product_info">
+                  <h3 class="basket_product_title">Fall Limited Edition Sneakers</h3>
+                  <span class="product_quantity"></span>
+                  <span class="product_total"></span>
+                </div>
+                <img src="images/icon-delete.svg" alt="delete" class="delete">
+              </div>
+              <button class="checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+        <img src="images/image-avatar.png" width="30" alt="avatar" class="user_avatar">
+      </div>
+    </nav>
+    <hr class="nav_line">
+  </header>
+  <main class="main">
+    <div class="picture">
+      <div class="arrows">
+        <div class="arrow_container">
+          <img src="images/icon-previous.svg" alt="left arrow" id="left" width="11">
+        </div>
+        <div class="arrow_container">
+          <img src="images/icon-next.svg" alt="right arrow" id="right" width="11">
+        </div>
+      </div>
+      <div class="img_container" select= 1>
+        <img src="images/image-product-1.jpg" alt="shoes" class="shoes_img shoes_img1">
+        <img src="images/image-product-2.jpg" alt="shoes" class="shoes_img">
+        <img src="images/image-product-3.jpg" alt="shoes" class="shoes_img">
+        <img src="images/image-product-4.jpg" alt="shoes" class="shoes_img">
+      </div>
+      <div class="img_thumbnails">
+        <div class="thumbnail_container img1" img-value="1"></div>
+        <div class="thumbnail_container img2" img-value="2"></div>
+        <div class="thumbnail_container img3" img-value="3"></div>
+        <div class="thumbnail_container img4" img-value="4"></div>
+      </div>
+    </div>
+    <section class="info">
+      <h2 class="sneaker_title">Sneaker Company</h2>
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <p class="article_info">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price">
+        <div class="current_price_container">
+          <span class="current_price">$125.00</span>
+          <span class="discount">50%</span>
+        </div>
+        <div class="last_price">
+          <del>$250.00</del>
+        </div>
+      </div>
+      <div class="product_container">
+        <div class="item_quantity">
+          <img src="images/icon-minus.svg" alt="minus" class="minus">
+          <span class="quantity">0</span>
+          <img src="images/icon-plus.svg" alt="plus" class="plus">
+        </div>
+        <button class="addtocart_btn" items="true">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" class="btn_cart">
+            <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#ffede0" fill-rule="nonzero"/>
+          </svg>
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
